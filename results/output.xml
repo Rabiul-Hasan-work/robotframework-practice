@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2025-11-23T18:11:43.525389" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot-Framework-Practice" source="C:\Robot-framework-automation\robot-framework-practice">
+<suite id="s1-s1" name="Test" source="C:\Robot-framework-automation\robot-framework-practice\test">
+<suite id="s1-s1-s1" name="Inputbox" source="C:\Robot-framework-automation\robot-framework-practice\test\Inputbox.robot">
+<test id="s1-s1-s1-t1" name="TestingInputBox" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-23T18:11:45.637611" level="INFO">Opening browser 'Chrome' to base url 'https://practice.qabrains.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-23T18:11:45.637223" elapsed="4.025961"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-23T18:11:49.664063" elapsed="0.038660"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-11-23T18:11:49.714701" level="INFO">Page title is 'QA Practice Site'.</msg>
+<arg>QA Practice Site</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-11-23T18:11:49.703356" elapsed="0.012037"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-11-23T18:11:49.718627" level="INFO">${"email_txt"} = id:email</msg>
+<var>${"email_txt"}</var>
+<arg>id:email</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-11-23T18:11:49.718085" elapsed="0.001034"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-11-23T18:11:50.011027" level="INFO">Element 'id:email' is displayed.</msg>
+<arg>${"email_txt"}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-23T18:11:49.720968" elapsed="0.290605"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${"email_txt"}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-23T18:11:50.012531" elapsed="0.031071"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-23T18:11:50.045478" level="INFO">Typing text 'JohnDoe@gmail.com' into text field 'id:email'.</msg>
+<arg>${"email_txt"}</arg>
+<arg>JohnDoe@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-23T18:11:50.044404" elapsed="0.129904"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-23T18:11:55.176357" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-23T18:11:50.175239" elapsed="5.001813"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${"email_txt"}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-23T18:11:55.178298" elapsed="0.088972"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-23T18:11:58.269722" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-23T18:11:55.268359" elapsed="3.002032"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-23T18:11:58.271531" elapsed="2.170915"/>
+</kw>
+<status status="PASS" start="2025-11-23T18:11:45.633249" elapsed="14.810398"/>
+</test>
+<status status="PASS" start="2025-11-23T18:11:43.659514" elapsed="16.800511"/>
+</suite>
+<status status="PASS" start="2025-11-23T18:11:43.652546" elapsed="16.819612"/>
+</suite>
+<status status="PASS" start="2025-11-23T18:11:43.547993" elapsed="16.928765"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robot-Framework-Practice" id="s1" pass="1" fail="0" skip="0">Robot-Framework-Practice</stat>
+<stat name="Test" id="s1-s1" pass="1" fail="0" skip="0">Robot-Framework-Practice.Test</stat>
+<stat name="Inputbox" id="s1-s1-s1" pass="1" fail="0" skip="0">Robot-Framework-Practice.Test.Inputbox</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
