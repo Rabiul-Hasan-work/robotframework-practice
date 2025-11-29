@@ -1,84 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2025-11-24T12:59:07.141572" rpa="false" schemaversion="5">
-<suite id="s1" name="Robot-Framework-Practice" source="C:\Robot-framework-automation\robot-framework-practice">
-<suite id="s1-s1" name="Test" source="C:\Robot-framework-automation\robot-framework-practice\test">
-<suite id="s1-s1-s1" name="Radiobutton" source="C:\Robot-framework-automation\robot-framework-practice\test\Radiobutton.robot">
+<robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2025-11-29T10:04:48.030502" rpa="false" schemaversion="5">
+<suite id="s1" name="Robotframework-Practice" source="D:\Automation\Robot Framework\robotframework-practice">
+<suite id="s1-s1" name="Test" source="D:\Automation\Robot Framework\robotframework-practice\test">
+<suite id="s1-s1-s1" name="Radiobutton" source="D:\Automation\Robot Framework\robotframework-practice\test\Radiobutton.robot">
 <test id="s1-s1-s1-t1" name="Testing Radio Button and Check Boxes" line="9">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-11-24T12:59:07.375711" level="INFO">Opening browser 'Chrome' to base url 'https://practice.qabrains.com/form-submission'.</msg>
+<msg time="2025-11-29T10:04:48.142912" level="INFO">Opening browser 'Chrome' to base url 'https://practice.qabrains.com/form-submission'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-11-24T12:59:07.375105" elapsed="2.411950"/>
+<status status="PASS" start="2025-11-29T10:04:48.142621" elapsed="1.978581"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-11-24T12:59:09.789063" elapsed="0.051146"/>
+<status status="PASS" start="2025-11-29T10:04:50.121656" elapsed="0.017893"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-11-24T12:59:11.842351" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-11-29T10:04:52.140517" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-11-24T12:59:09.841021" elapsed="2.002030"/>
+<status status="PASS" start="2025-11-29T10:04:50.139840" elapsed="2.001176"/>
 </kw>
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
 <arg>id=Green</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-11-24T12:59:11.844147" elapsed="0.332091"/>
+<status status="PASS" start="2025-11-29T10:04:52.141359" elapsed="0.263936"/>
 </kw>
 <kw name="Select Radio Button" owner="SeleniumLibrary">
-<msg time="2025-11-24T12:59:12.178260" level="INFO">Selecting 'Green' from radio button 'color'.</msg>
+<msg time="2025-11-29T10:04:52.405925" level="INFO">Selecting 'Green' from radio button 'color'.</msg>
 <arg>color</arg>
 <arg>Green</arg>
 <doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<status status="PASS" start="2025-11-24T12:59:12.177270" elapsed="0.215166"/>
+<status status="PASS" start="2025-11-29T10:04:52.405624" elapsed="0.047058"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-11-24T12:59:14.394875" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-11-29T10:04:54.453881" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-11-24T12:59:12.393196" elapsed="2.002341"/>
+<status status="PASS" start="2025-11-29T10:04:52.453013" elapsed="2.001330"/>
 </kw>
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
 <arg>id=Pizza</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-11-24T12:59:14.398234" elapsed="0.322059"/>
+<status status="PASS" start="2025-11-29T10:04:54.454802" elapsed="0.268159"/>
 </kw>
 <kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2025-11-24T12:59:14.722115" level="INFO">Selecting checkbox 'id=Pizza'.</msg>
+<msg time="2025-11-29T10:04:54.723634" level="INFO">Selecting checkbox 'id=Pizza'.</msg>
 <arg>id=Pizza</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2025-11-24T12:59:14.721237" elapsed="0.186887"/>
+<status status="PASS" start="2025-11-29T10:04:54.723313" elapsed="0.040999"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-11-24T12:59:16.910636" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-11-29T10:04:56.765440" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-11-24T12:59:14.909113" elapsed="2.002138"/>
+<status status="PASS" start="2025-11-29T10:04:54.764659" elapsed="2.001197"/>
 </kw>
 <kw name="Unselect Checkbox" owner="SeleniumLibrary">
-<msg time="2025-11-24T12:59:16.916183" level="INFO">Unselecting checkbox 'id=Pizza'.</msg>
+<msg time="2025-11-29T10:04:56.766739" level="INFO">Unselecting checkbox 'id=Pizza'.</msg>
 <arg>id=Pizza</arg>
 <doc>Removes the selection of checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2025-11-24T12:59:16.915192" elapsed="0.191183"/>
+<status status="PASS" start="2025-11-29T10:04:56.766370" elapsed="0.038591"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-11-24T12:59:19.109254" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-11-29T10:04:58.806066" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-11-24T12:59:17.107725" elapsed="2.002158"/>
+<status status="PASS" start="2025-11-29T10:04:56.805342" elapsed="2.001072"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-11-24T12:59:19.110862" elapsed="2.232051"/>
+<status status="PASS" start="2025-11-29T10:04:58.806741" elapsed="2.070925"/>
 </kw>
-<status status="PASS" start="2025-11-24T12:59:07.370273" elapsed="13.973973"/>
+<status status="PASS" start="2025-11-29T10:04:48.140331" elapsed="12.737683"/>
 </test>
-<status status="PASS" start="2025-11-24T12:59:07.188968" elapsed="14.167016"/>
+<status status="PASS" start="2025-11-29T10:04:48.049432" elapsed="12.831615"/>
 </suite>
-<status status="PASS" start="2025-11-24T12:59:07.175429" elapsed="14.189300"/>
+<status status="PASS" start="2025-11-29T10:04:48.046611" elapsed="12.836333"/>
 </suite>
-<status status="PASS" start="2025-11-24T12:59:07.146546" elapsed="14.224543"/>
+<status status="PASS" start="2025-11-29T10:04:48.033473" elapsed="12.851124"/>
 </suite>
 <statistics>
 <total>
@@ -87,9 +87,9 @@
 <tag>
 </tag>
 <suite>
-<stat name="Robot-Framework-Practice" id="s1" pass="1" fail="0" skip="0">Robot-Framework-Practice</stat>
-<stat name="Test" id="s1-s1" pass="1" fail="0" skip="0">Robot-Framework-Practice.Test</stat>
-<stat name="Radiobutton" id="s1-s1-s1" pass="1" fail="0" skip="0">Robot-Framework-Practice.Test.Radiobutton</stat>
+<stat name="Robotframework-Practice" id="s1" pass="1" fail="0" skip="0">Robotframework-Practice</stat>
+<stat name="Test" id="s1-s1" pass="1" fail="0" skip="0">Robotframework-Practice.Test</stat>
+<stat name="Radiobutton" id="s1-s1-s1" pass="1" fail="0" skip="0">Robotframework-Practice.Test.Radiobutton</stat>
 </suite>
 </statistics>
 <errors>
