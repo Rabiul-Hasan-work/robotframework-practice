@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2025-11-29T10:04:48.030502" rpa="false" schemaversion="5">
 <suite id="s1" name="Robotframework-Practice" source="D:\Automation\Robot Framework\robotframework-practice">
 <suite id="s1-s1" name="Test" source="D:\Automation\Robot Framework\robotframework-practice\test">
@@ -79,6 +80,61 @@
 <status status="PASS" start="2025-11-29T10:04:48.046611" elapsed="12.836333"/>
 </suite>
 <status status="PASS" start="2025-11-29T10:04:48.033473" elapsed="12.851124"/>
+=======
+<robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2025-11-30T10:40:27.688974" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot-Framework-Practice" source="C:\Robot-framework-automation\robot-framework-practice">
+<suite id="s1-s1" name="Test" source="C:\Robot-framework-automation\robot-framework-practice\test">
+<suite id="s1-s1-s1" name="Dropdowns" source="C:\Robot-framework-automation\robot-framework-practice\test\dropdowns.robot">
+<test id="s1-s1-s1-t1" name="Handling Dropdowns and Lists" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-30T10:40:31.381335" level="INFO">Opening browser 'Chrome' to base url 'https://practice.qabrains.com/form-submission'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-30T10:40:31.380858" elapsed="3.597849"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-30T10:40:34.979815" elapsed="0.039556"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-30T10:40:37.022654" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-30T10:40:35.020355" elapsed="2.003615"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-11-30T10:40:37.026653" level="INFO">Selecting options from selection list 'country' by label Barbados.</msg>
+<arg>country</arg>
+<arg>Barbados</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-11-30T10:40:37.025196" elapsed="0.178932"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-30T10:40:40.207131" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-30T10:40:37.205067" elapsed="3.002771"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2025-11-30T10:40:40.210038" level="INFO">Selecting options from selection list 'country' by index 3.</msg>
+<arg>country</arg>
+<arg>3</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-11-30T10:40:40.209101" elapsed="0.408828"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-30T10:40:40.619235" elapsed="2.167353"/>
+</kw>
+<status status="PASS" start="2025-11-30T10:40:31.376698" elapsed="11.410915"/>
+</test>
+<status status="PASS" start="2025-11-30T10:40:27.865603" elapsed="14.933698"/>
+</suite>
+<status status="PASS" start="2025-11-30T10:40:27.860382" elapsed="14.945126"/>
+</suite>
+<status status="PASS" start="2025-11-30T10:40:27.710227" elapsed="15.099415"/>
+>>>>>>> 6a9d411 (added dropdown Completed)
 </suite>
 <statistics>
 <total>
@@ -87,9 +143,15 @@
 <tag>
 </tag>
 <suite>
+<<<<<<< HEAD
 <stat name="Robotframework-Practice" id="s1" pass="1" fail="0" skip="0">Robotframework-Practice</stat>
 <stat name="Test" id="s1-s1" pass="1" fail="0" skip="0">Robotframework-Practice.Test</stat>
 <stat name="Radiobutton" id="s1-s1-s1" pass="1" fail="0" skip="0">Robotframework-Practice.Test.Radiobutton</stat>
+=======
+<stat name="Robot-Framework-Practice" id="s1" pass="1" fail="0" skip="0">Robot-Framework-Practice</stat>
+<stat name="Test" id="s1-s1" pass="1" fail="0" skip="0">Robot-Framework-Practice.Test</stat>
+<stat name="Dropdowns" id="s1-s1-s1" pass="1" fail="0" skip="0">Robot-Framework-Practice.Test.Dropdowns</stat>
+>>>>>>> 6a9d411 (added dropdown Completed)
 </suite>
 </statistics>
 <errors>
