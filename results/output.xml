@@ -1,42 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2025-12-01T18:29:54.851359" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2025-12-02T18:23:13.280470" rpa="false" schemaversion="5">
 <suite id="s1" name="Robot-Framework-Practice" source="C:\Robot-framework-automation\robot-framework-practice">
 <suite id="s1-s1" name="TestCase" source="C:\Robot-framework-automation\robot-framework-practice\TestCase">
-<suite id="s1-s1-s1" name="CloseAll" source="C:\Robot-framework-automation\robot-framework-practice\TestCase\CloseAll.robot">
-<test id="s1-s1-s1-t1" name="MyTestCase" line="5">
+<suite id="s1-s1-s1" name="SwitchToMultipleBrowser" source="C:\Robot-framework-automation\robot-framework-practice\TestCase\SwitchToMultipleBrowser.robot">
+<test id="s1-s1-s1-t1" name="Multiple browser Test" line="6">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-12-01T18:29:55.094750" level="INFO">Opening browser 'chrome' to base url 'https://practice.qabrains.com/registration'.</msg>
-<arg>https://practice.qabrains.com/registration</arg>
+<msg time="2025-12-02T18:23:13.558333" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>https://www.google.com</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-12-01T18:29:55.094184" elapsed="5.180779"/>
+<status status="PASS" start="2025-12-02T18:23:13.557924" elapsed="8.694645"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-12-01T18:30:00.276536" elapsed="0.050869"/>
+<status status="PASS" start="2025-12-02T18:23:22.253411" elapsed="0.030158"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-02T18:23:24.289807" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-02T18:23:22.288420" elapsed="2.002003"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-12-01T18:30:00.329246" level="INFO">Opening browser 'chrome' to base url 'https://practice.qabrains.com/'.</msg>
-<arg>https://practice.qabrains.com/</arg>
+<msg time="2025-12-02T18:23:24.291454" level="INFO">Opening browser 'chrome' to base url 'https://www.bing.com'.</msg>
+<arg>https://www.bing.com</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-12-01T18:30:00.328481" elapsed="4.269978"/>
+<status status="PASS" start="2025-12-02T18:23:24.290910" elapsed="1.584086"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-12-01T18:30:04.599355" elapsed="0.049814"/>
+<status status="PASS" start="2025-12-02T18:23:25.875796" elapsed="0.070927"/>
+</kw>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" start="2025-12-02T18:23:25.948208" elapsed="0.000606"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-12-02T18:23:25.959871" level="INFO">${title1} = Google</msg>
+<var>${title1}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-12-02T18:23:25.949107" elapsed="0.011481"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>First Browser Title: ${title1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-02T18:23:25.961352" elapsed="0.000765"/>
+</kw>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>2</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" start="2025-12-02T18:23:25.962417" elapsed="0.000458"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-12-02T18:23:25.972971" level="INFO">${title2} = Search - Microsoft Bing</msg>
+<var>${title2}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-12-02T18:23:25.963294" elapsed="0.010189"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Second Browser Title: ${title2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-02T18:23:25.974031" elapsed="0.001041"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-02T18:23:27.978977" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-02T18:23:25.977989" elapsed="2.001401"/>
 </kw>
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-12-01T18:30:04.650871" elapsed="4.447461"/>
+<status status="PASS" start="2025-12-02T18:23:27.979862" elapsed="4.402874"/>
 </kw>
-<status status="PASS" start="2025-12-01T18:29:55.088505" elapsed="14.011000"/>
+<status status="PASS" start="2025-12-02T18:23:13.554480" elapsed="18.828988"/>
 </test>
-<status status="PASS" start="2025-12-01T18:29:54.895816" elapsed="14.220192"/>
+<status status="PASS" start="2025-12-02T18:23:13.324254" elapsed="19.067664"/>
 </suite>
-<status status="PASS" start="2025-12-01T18:29:54.889395" elapsed="14.235263"/>
+<status status="PASS" start="2025-12-02T18:23:13.318037" elapsed="19.079790"/>
 </suite>
-<status status="PASS" start="2025-12-01T18:29:54.858613" elapsed="14.270187"/>
+<status status="PASS" start="2025-12-02T18:23:13.285019" elapsed="19.117095"/>
 </suite>
 <statistics>
 <total>
@@ -47,7 +91,7 @@
 <suite>
 <stat name="Robot-Framework-Practice" id="s1" pass="1" fail="0" skip="0">Robot-Framework-Practice</stat>
 <stat name="TestCase" id="s1-s1" pass="1" fail="0" skip="0">Robot-Framework-Practice.TestCase</stat>
-<stat name="CloseAll" id="s1-s1-s1" pass="1" fail="0" skip="0">Robot-Framework-Practice.TestCase.CloseAll</stat>
+<stat name="SwitchToMultipleBrowser" id="s1-s1-s1" pass="1" fail="0" skip="0">Robot-Framework-Practice.TestCase.SwitchToMultipleBrowser</stat>
 </suite>
 </statistics>
 <errors>
