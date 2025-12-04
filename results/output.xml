@@ -1,97 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2025-12-02T18:23:13.280470" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2025-12-04T16:34:54.032055" rpa="false" schemaversion="5">
 <suite id="s1" name="Robot-Framework-Practice" source="C:\Robot-framework-automation\robot-framework-practice">
 <suite id="s1-s1" name="TestCase" source="C:\Robot-framework-automation\robot-framework-practice\TestCase">
-<suite id="s1-s1-s1" name="SwitchToMultipleBrowser" source="C:\Robot-framework-automation\robot-framework-practice\TestCase\SwitchToMultipleBrowser.robot">
-<test id="s1-s1-s1-t1" name="Multiple browser Test" line="6">
+<suite id="s1-s1-s1" name="MouseOperations" source="C:\Robot-framework-automation\robot-framework-practice\TestCase\MouseOperations.robot">
+<test id="s1-s1-s1-t1" name="MouseActions" line="5">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-12-02T18:23:13.558333" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
-<arg>https://www.google.com</arg>
-<arg>chrome</arg>
+<msg time="2025-12-04T16:34:54.294135" level="INFO">Opening browser 'firefox' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>https://testautomationpractice.blogspot.com/</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-12-02T18:23:13.557924" elapsed="8.694645"/>
+<status status="PASS" start="2025-12-04T16:34:54.293564" elapsed="9.610732"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-12-02T18:23:22.253411" elapsed="0.030158"/>
+<status status="PASS" start="2025-12-04T16:35:03.905168" elapsed="0.309556"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-12-02T18:23:24.289807" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
+<msg time="2025-12-04T16:35:07.216671" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-12-02T18:23:22.288420" elapsed="2.002003"/>
+<status status="PASS" start="2025-12-04T16:35:04.215390" elapsed="3.001961"/>
 </kw>
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-12-02T18:23:24.291454" level="INFO">Opening browser 'chrome' to base url 'https://www.bing.com'.</msg>
-<arg>https://www.bing.com</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-12-02T18:23:24.290910" elapsed="1.584086"/>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<msg time="2025-12-04T16:35:07.360901" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-28.png"&gt;&lt;img src="selenium-screenshot-28.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-12-04T16:35:07.361415" level="FAIL">MoveTargetOutOfBoundsException: Message: Move target (1011, 1102) is out of bounds of viewport dimensions (1536, 731)
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+MoveTargetOutOfBoundsError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:521:5
+assertTargetInViewPort@chrome://remote/content/shared/webdriver/Actions.sys.mjs:3122:11
+#assertInViewPort@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:67:17
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:187:42
+</msg>
+<arg>xpath://*[@id="HTML10"]/div[1]/button</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="FAIL" start="2025-12-04T16:35:07.218460" elapsed="0.159643">MoveTargetOutOfBoundsException: Message: Move target (1011, 1102) is out of bounds of viewport dimensions (1536, 731)
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+MoveTargetOutOfBoundsError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:521:5
+assertTargetInViewPort@chrome://remote/content/shared/webdriver/Actions.sys.mjs:3122:11
+#assertInViewPort@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:67:17
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:187:42
+</status>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<arg>xpath://*[@id="HTML10"]/div[1]/button</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-12-04T16:35:07.384183" elapsed="0.000346"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-12-04T16:35:07.393766" elapsed="0.000306"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>https://testautomationpractice.blogspot.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2025-12-04T16:35:07.401413" elapsed="0.000278"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-12-02T18:23:25.875796" elapsed="0.070927"/>
+<status status="NOT RUN" start="2025-12-04T16:35:07.404942" elapsed="0.000305"/>
 </kw>
-<kw name="Switch Browser" owner="SeleniumLibrary">
-<arg>1</arg>
-<doc>Switches between active browsers using ``index_or_alias``.</doc>
-<status status="PASS" start="2025-12-02T18:23:25.948208" elapsed="0.000606"/>
-</kw>
-<kw name="Get Title" owner="SeleniumLibrary">
-<msg time="2025-12-02T18:23:25.959871" level="INFO">${title1} = Google</msg>
-<var>${title1}</var>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-12-02T18:23:25.949107" elapsed="0.011481"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>First Browser Title: ${title1}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-02T18:23:25.961352" elapsed="0.000765"/>
-</kw>
-<kw name="Switch Browser" owner="SeleniumLibrary">
-<arg>2</arg>
-<doc>Switches between active browsers using ``index_or_alias``.</doc>
-<status status="PASS" start="2025-12-02T18:23:25.962417" elapsed="0.000458"/>
-</kw>
-<kw name="Get Title" owner="SeleniumLibrary">
-<msg time="2025-12-02T18:23:25.972971" level="INFO">${title2} = Search - Microsoft Bing</msg>
-<var>${title2}</var>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-12-02T18:23:25.963294" elapsed="0.010189"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Second Browser Title: ${title2}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-02T18:23:25.974031" elapsed="0.001041"/>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:draggable</arg>
+<arg>id:droppable</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="NOT RUN" start="2025-12-04T16:35:07.407964" elapsed="0.000289"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-12-02T18:23:27.978977" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
+<arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-12-02T18:23:25.977989" elapsed="2.001401"/>
+<status status="NOT RUN" start="2025-12-04T16:35:07.408689" elapsed="0.000164"/>
 </kw>
-<kw name="Close All Browsers" owner="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-12-02T18:23:27.979862" elapsed="4.402874"/>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-12-04T16:35:07.409078" elapsed="0.000100"/>
 </kw>
-<status status="PASS" start="2025-12-02T18:23:13.554480" elapsed="18.828988"/>
+<status status="FAIL" start="2025-12-04T16:34:54.288156" elapsed="13.121271">MoveTargetOutOfBoundsException: Message: Move target (1011, 1102) is out of bounds of viewport dimensions (1536, 731)
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+MoveTargetOutOfBoundsError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:521:5
+assertTargetInViewPort@chrome://remote/content/shared/webdriver/Actions.sys.mjs:3122:11
+#assertInViewPort@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:67:17
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:187:42
+</status>
 </test>
-<status status="PASS" start="2025-12-02T18:23:13.324254" elapsed="19.067664"/>
+<status status="FAIL" start="2025-12-04T16:34:54.079171" elapsed="13.351245"/>
 </suite>
-<status status="PASS" start="2025-12-02T18:23:13.318037" elapsed="19.079790"/>
+<status status="FAIL" start="2025-12-04T16:34:54.072293" elapsed="13.370066"/>
 </suite>
-<status status="PASS" start="2025-12-02T18:23:13.285019" elapsed="19.117095"/>
+<status status="FAIL" start="2025-12-04T16:34:54.037924" elapsed="13.409187"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Robot-Framework-Practice" id="s1" pass="1" fail="0" skip="0">Robot-Framework-Practice</stat>
-<stat name="TestCase" id="s1-s1" pass="1" fail="0" skip="0">Robot-Framework-Practice.TestCase</stat>
-<stat name="SwitchToMultipleBrowser" id="s1-s1-s1" pass="1" fail="0" skip="0">Robot-Framework-Practice.TestCase.SwitchToMultipleBrowser</stat>
+<stat name="Robot-Framework-Practice" id="s1" pass="0" fail="1" skip="0">Robot-Framework-Practice</stat>
+<stat name="TestCase" id="s1-s1" pass="0" fail="1" skip="0">Robot-Framework-Practice.TestCase</stat>
+<stat name="MouseOperations" id="s1-s1-s1" pass="0" fail="1" skip="0">Robot-Framework-Practice.TestCase.MouseOperations</stat>
 </suite>
 </statistics>
 <errors>
